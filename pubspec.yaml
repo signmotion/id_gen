@@ -1,0 +1,18 @@
+name: id_gen
+description: A set of IDs generators.
+version: 0.1.0
+publish_to: "none"
+
+environment:
+  sdk: ">=3.1.4"
+
+dependencies:
+  dart_helpers:
+    path: ../dart_helpers
+    #git: https://github.com/signmotion/dart_helpers
+
+  uuid: ^4.1.0
+
+dev_dependencies:
+  lints: ^3.0.0
+  test: ^1.21.0
