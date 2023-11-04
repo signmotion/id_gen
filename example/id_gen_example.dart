@@ -4,8 +4,10 @@ import 'package:id_gen/id_gen.dart';
 
 void main() {
   {
-    final id = const UuidV5Gen().get();
-    print('id: $id');
+    final gen = UuidV5Gen();
+    for (var i = 0; i < 4; ++i) {
+      print('id: ${gen.get()}');
+    }
   }
 
   {
