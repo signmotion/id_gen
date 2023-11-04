@@ -14,9 +14,9 @@ class UuidGen extends IdGenBase<Uuid> {
   Uuid get([dynamic source]) => Uuid(goptions: options);
 }
 
-/// UUID v5 generator.
-class UuidV5Gen extends IdGenBase<String> {
-  const UuidV5Gen({this.options});
+/// UUID v4 generator.
+class UuidV4Gen extends IdGenBase<String> {
+  const UuidV4Gen({this.options});
 
   final GlobalOptions? options;
 
