@@ -32,6 +32,14 @@ void main() {
   });
 
   test('isNotUuidWithPrefix()', () {
+    expect('44030040-ca6d-43a3-9fda-0d121401f268'.isUuidWithPrefix(), isFalse);
+    expect('44030040-ca6d-43a3-9fda-0d121401f268', isNotUuidWithPrefix);
+
+    expect('', isNotUuidWithPrefix);
+    expect('       ', isNotUuidWithPrefix);
+    expect('s-', isNotUuidWithPrefix);
+    expect('s-     ', isNotUuidWithPrefix);
+
     expect('a-s-44030040-ca6d-43a3-9fda-0d121401f268', isNotUuidWithPrefix);
     expect('s--44030040-CA6D-43A3-9FDA-0D121401F268', isNotUuidWithPrefix);
     expect('-s-44030040-CA6D-43A3-9FDA-0D121401F268', isNotUuidWithPrefix);
@@ -39,5 +47,26 @@ void main() {
     expect('44030040-ca6d-43a3-9fda-0d121401f268-session', isNotUuidWithPrefix);
     expect('44030040-ca6d-43a3-9fda-0d121401f268session-', isNotUuidWithPrefix);
     expect('44030040-ca6d-43a3-9fda-0d121401f268session', isNotUuidWithPrefix);
+  });
+
+  test('isUuidWithPrefix(p)', () {
+    expect(
+        'p-44030040-ca6d-43a3-9fda-0d121401f268'.isUuidWithPrefix('p'), isTrue);
+    expect('  p-44030040-ca6d-43a3-9fda-0d121401f268'.isUuidWithPrefix('p'),
+        isTrue);
+  });
+
+  test('isNotUuidWithPrefix(p)', () {
+    expect(
+        '44030040-ca6d-43a3-9fda-0d121401f268'.isUuidWithPrefix('p'), isFalse);
+    expect('44030040-ca6d-43a3-9fda-0d121401f268'.isNotUuidWithPrefix('p'),
+        isTrue);
+
+    expect('v-44030040-ca6d-43a3-9fda-0d121401f268'.isNotUuidWithPrefix('p'),
+        isTrue);
+    expect('p -44030040-ca6d-43a3-9fda-0d121401f268'.isNotUuidWithPrefix('p'),
+        isTrue);
+    expect('pp-44030040-ca6d-43a3-9fda-0d121401f268'.isNotUuidWithPrefix('p'),
+        isTrue);
   });
 }
