@@ -69,4 +69,13 @@ void main() {
     expect('pp-44030040-ca6d-43a3-9fda-0d121401f268'.isNotUuidWithPrefix('p'),
         isTrue);
   });
+
+  test('bittenOfUuid44', () {
+    expect('44030040-ca6d-43a3-9fda-0d121401f268'.bittenOfUuid44, '4403:f268');
+    expect(
+        'p-44030040-ca6d-43a3-9fda-0d121401f268'.bittenOfUuid44, 'p-44:f268');
+
+    expect('any string'.bittenOfUuid44, 'any :ring');
+    expect('   any string '.bittenOfUuid44, '   a:ing ');
+  });
 }

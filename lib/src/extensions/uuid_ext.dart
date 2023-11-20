@@ -1,3 +1,5 @@
+import 'package:dart_helpers/dart_helpers.dart';
+
 extension UuidStringExt on String {
   /// '44030040-ca6d-43a3-9fda-0d121401f268'.isUuid == true
   bool get isUuid => RegExp(
@@ -43,4 +45,22 @@ extension UuidStringExt on String {
   }
 
   bool isNotUuidWithPrefix([String prefix = '']) => !isUuidWithPrefix(prefix);
+
+  static const bittenOfReplacer = ':';
+
+  /// Left 2 first and 2 last symbols. Before them will able [bittenOfReplacer].
+  String get bittenOfUuid22 => bittenOf(2, 2, bittenOfReplacer);
+
+  /// Left 4 first and 4 last symbols. Before them will able [bittenOfReplacer].
+  String get bittenOfUuid44 => bittenOf(4, 4, bittenOfReplacer);
+}
+
+extension UuidsStringExt on List<String> {
+  /// Same [bittenOfUuid22] but for list.
+  List<String> get bittenOfUuid22 =>
+      bittenOf(2, 2, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOfUuid44] but for list.
+  List<String> get bittenOfUuid44 =>
+      bittenOf(4, 4, UuidStringExt.bittenOfReplacer);
 }
