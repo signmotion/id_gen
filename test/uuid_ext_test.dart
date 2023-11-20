@@ -78,4 +78,31 @@ void main() {
     expect('any string'.bittenOfUuid44, 'any :ring');
     expect('   any string '.bittenOfUuid44, '   a:ing ');
   });
+
+  test('bittenOfAllUuids44', () {
+    expect(
+        '''
+A connection to server
+`InternetAddress('0.0.0.0', IPv4):8080 🧠 Cogentia Cortex [💞aides, 💞Buttler]`
+to 10.0.2.2:8080 opened with session `s-925e903d-4b58-4a08-bdf5-a3aedd78d998`
+and participant client `p-1aece77f-3214-414d-8dae-3e30a909c420`
+for device `e196521333ec06e6`.
+
+Meet m-9eb5951f-fab0-4907-b312-b4f7a1ea194d organized  with invited participants
+`[p-1aece77f-3214-414d-8dae-3e30a909c420, p-613d9ca3-9cf7-4fa4-88df-5a4e4f58490d]`
+into shared room `t-9d5feb14-3678-4fb9-abb2-7655fe6a5607`.
+'''
+            .bittenOfAllUuids44,
+        '''
+A connection to server
+`InternetAddress('0.0.0.0', IPv4):8080 🧠 Cogentia Cortex [💞aides, 💞Buttler]`
+to 10.0.2.2:8080 opened with session `s-925e:d998`
+and participant client `p-1aec:c420`
+for device `e196521333ec06e6`.
+
+Meet m-9eb5:194d organized  with invited participants
+`[p-1aec:c420, p-613d:490d]`
+into shared room `t-9d5f:5607`.
+''');
+  });
 }

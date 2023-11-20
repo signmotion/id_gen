@@ -1,11 +1,12 @@
 import 'package:dart_helpers/dart_helpers.dart';
 
 extension UuidStringExt on String {
+  static const detector =
+      r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}';
+
   /// '44030040-ca6d-43a3-9fda-0d121401f268'.isUuid == true
-  bool get isUuid => RegExp(
-        r'^[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}$',
-        caseSensitive: false,
-      ).hasMatch(trim());
+  bool get isUuid =>
+      RegExp('^$detector\$', caseSensitive: false).hasMatch(trim());
 
   bool get isNotUuid => !isUuid;
 
@@ -53,6 +54,33 @@ extension UuidStringExt on String {
 
   /// Left 4 first and 4 last symbols. Before them will able [bittenOfReplacer].
   String get bittenOfUuid44 => bittenOf(4, 4, bittenOfReplacer);
+
+  /// See [bittenOfAllUuids].
+  String get bittenOfAllUuids22 => bittenOfAllUuids(2, 2);
+
+  /// See [bittenOfAllUuids].
+  String get bittenOfAllUuids44 => bittenOfAllUuids(4, 4);
+
+  /// Bitten of all UUIDs into the text.
+  /// Left [begin] first and [end] last symbols in each UUID.
+  /// Before them will insert [replacer].
+  /// See [bittenOfUuid22], [bittenOfUuid44].
+  String bittenOfAllUuids(
+    int begin,
+    int end, [
+    String replacer = bittenOfReplacer,
+  ]) {
+    var s = this;
+
+    final regex = RegExp(detector, caseSensitive: false);
+    final matches = regex.allMatches(this);
+    for (final match in matches) {
+      final m = match[0]!;
+      s = s.replaceFirst(m, m.bittenOf(begin, end, replacer));
+    }
+
+    return s;
+  }
 }
 
 extension UuidsStringExt on List<String> {
