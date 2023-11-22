@@ -5,6 +5,7 @@ extension UuidStringExt on String {
       r'[0-9a-f]{8}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{4}-[0-9a-f]{12}';
 
   /// '44030040-ca6d-43a3-9fda-0d121401f268'.isUuid == true
+  /// '  44030040-ca6d-43a3-9fda-0d121401f268 '.isUuid == true
   bool get isUuid =>
       RegExp('^$detector\$', caseSensitive: false).hasMatch(trim());
 
@@ -49,14 +50,18 @@ extension UuidStringExt on String {
 
   static const bittenOfReplacer = ':';
 
-  /// Left 2 first and 2 last symbols. Before them will able [bittenOfReplacer].
-  String get bittenOfUuid22 => bittenOf(2, 2, bittenOfReplacer);
+  /// Left 3 first and 2 last symbols. Before them will able [bittenOfReplacer].
+  String get bittenOfUuid32 => isUuid || isUuidWithPrefix()
+      ? trim().bittenOf(3, 2, bittenOfReplacer)
+      : this;
 
   /// Left 4 first and 4 last symbols. Before them will able [bittenOfReplacer].
-  String get bittenOfUuid44 => bittenOf(4, 4, bittenOfReplacer);
+  String get bittenOfUuid44 => isUuid || isUuidWithPrefix()
+      ? trim().bittenOf(4, 4, bittenOfReplacer)
+      : this;
 
   /// See [bittenOfAllUuids].
-  String get bittenOfAllUuids22 => bittenOfAllUuids(2, 2);
+  String get bittenOfAllUuids32 => bittenOfAllUuids(3, 2);
 
   /// See [bittenOfAllUuids].
   String get bittenOfAllUuids44 => bittenOfAllUuids(4, 4);
@@ -64,7 +69,7 @@ extension UuidStringExt on String {
   /// Bitten of all UUIDs into the text.
   /// Left [begin] first and [end] last symbols in each UUID.
   /// Before them will insert [replacer].
-  /// See [bittenOfUuid22], [bittenOfUuid44].
+  /// See [bittenOfUuid32], [bittenOfUuid44].
   String bittenOfAllUuids(
     int begin,
     int end, [
@@ -83,12 +88,57 @@ extension UuidStringExt on String {
   }
 }
 
-extension UuidsStringExt on List<String> {
-  /// Same [bittenOfUuid22] but for list.
-  List<String> get bittenOfUuid22 =>
-      bittenOf(2, 2, UuidStringExt.bittenOfReplacer);
+extension UuidsListExt on List<dynamic> {
+  /// Same [bittenOfUuid32] but for list.
+  List<dynamic> get bittenOfAllUuids32 =>
+      bittenOf(3, 2, UuidStringExt.bittenOfReplacer);
 
   /// Same [bittenOfUuid44] but for list.
-  List<String> get bittenOfUuid44 =>
+  List<dynamic> get bittenOfAllUuids44 =>
       bittenOf(4, 4, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOf] but for the each string into the list.
+  List<dynamic> bittenOf(int begin, int end, [String replacer = '..']) => map(
+        (v) => v is String && (v.isUuid || v.isUuidWithPrefix())
+            ? v.bittenOf(begin, end, replacer)
+            : v,
+      ).toList();
+}
+
+extension UuidsSetExt on Set<dynamic> {
+  /// Same [bittenOfUuid32] but for set.
+  Set<dynamic> get bittenOfAllUuids32 =>
+      bittenOf(3, 2, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOfUuid44] but for set.
+  Set<dynamic> get bittenOfAllUuids44 =>
+      bittenOf(4, 4, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOf] but for the each string into the set.
+  Set<dynamic> bittenOf(int begin, int end, [String replacer = '..']) => map(
+        (v) => v is String && (v.isUuid || v.isUuidWithPrefix())
+            ? v.bittenOf(begin, end, replacer)
+            : v,
+      ).toSet();
+}
+
+extension UuidsMapExt on Map<String, dynamic> {
+  /// Same [bittenOfUuid32] but for map.
+  Map<String, dynamic> get bittenOfAllUuids32 =>
+      bittenOf(3, 2, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOfUuid44] but for map.
+  Map<String, dynamic> get bittenOfAllUuids44 =>
+      bittenOf(4, 4, UuidStringExt.bittenOfReplacer);
+
+  /// Same [bittenOf] but for the each UUIDs into the map.
+  Map<String, dynamic> bittenOf(int begin, int end, [String replacer = '..']) =>
+      map(
+        (k, v) => MapEntry(
+          k,
+          v is String && (v.isUuid || v.isUuidWithPrefix())
+              ? v.bittenOf(begin, end, replacer)
+              : v,
+        ),
+      );
 }

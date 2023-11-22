@@ -70,16 +70,55 @@ void main() {
         isTrue);
   });
 
-  test('bittenOfUuid44', () {
+  test('bittenOfUuid44 on List', () {
+    expect(
+        <dynamic>[
+          '44030040-ca6d-43a3-9fda-0d121401f268',
+          '   any  text ',
+        ].bittenOfAllUuids44,
+        <dynamic>[
+          '4403:f268',
+          '   any  text ',
+        ]);
+  });
+
+  test('bittenOfUuid44 on Set', () {
+    expect(
+        <dynamic>{
+          '44030040-ca6d-43a3-9fda-0d121401f268',
+          '   any  text ',
+        }.bittenOfAllUuids44,
+        <dynamic>{
+          '4403:f268',
+          '   any  text ',
+        });
+  });
+
+  test('bittenOfUuid44 on Map', () {
+    expect(
+        <String, dynamic>{
+          'uid': '44030040-ca6d-43a3-9fda-0d121401f268',
+          'a': '   any  text ',
+        }.bittenOfAllUuids44,
+        <String, dynamic>{
+          'uid': '4403:f268',
+          'a': '   any  text ',
+        });
+  });
+
+  test('bittenOfUuid44 on String', () {
     expect('44030040-ca6d-43a3-9fda-0d121401f268'.bittenOfUuid44, '4403:f268');
     expect(
         'p-44030040-ca6d-43a3-9fda-0d121401f268'.bittenOfUuid44, 'p-44:f268');
 
-    expect('any string'.bittenOfUuid44, 'any :ring');
-    expect('   any string '.bittenOfUuid44, '   a:ing ');
+    expect(
+        '  44030040-ca6d-43a3-9fda-0d121401f268 '.bittenOfUuid44, '4403:f268');
+
+    expect('any string'.bittenOfUuid44, 'any string');
+    expect('   any string '.bittenOfUuid44, '   any string ');
   });
 
-  test('bittenOfAllUuids44', () {
+  test('bittenOfAllUuids44 on String', () {
     expect(
         '''
 A connection to server
