@@ -99,10 +99,20 @@ void main() {
         <String, dynamic>{
           'uid': '44030040-ca6d-43a3-9fda-0d121401f268',
           'a': '   any  text ',
+          'b': 0,
+          'null': null,
+          'list': [12, 'l-44030040-ca6d-43a3-9fda-0d121401f268'],
+          'set': {12, 's-44030040-ca6d-43a3-9fda-0d121401f268'},
+          'map': {'c': 12, 'd': 'm-44030040-ca6d-43a3-9fda-0d121401f268'},
         }.bittenOfAllUuids44,
         <String, dynamic>{
           'uid': '4403:f268',
           'a': '   any  text ',
+          'b': 0,
+          'null': null,
+          'list': [12, 'l-44:f268'],
+          'set': {12, 's-44:f268'},
+          'map': {'c': 12, 'd': 'm-44:f268'},
         });
   });
 

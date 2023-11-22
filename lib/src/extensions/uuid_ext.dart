@@ -133,12 +133,27 @@ extension UuidsMapExt on Map<String, dynamic> {
 
   /// Same [bittenOf] but for the each UUIDs into the map.
   Map<String, dynamic> bittenOf(int begin, int end, [String replacer = '..']) =>
-      map(
-        (k, v) => MapEntry(
-          k,
-          v is String && (v.isUuid || v.isUuidWithPrefix())
-              ? v.bittenOf(begin, end, replacer)
-              : v,
-        ),
-      );
+      _bittenOf(begin, end, replacer);
+
+  Map<String, dynamic> _bittenOf(
+    int begin,
+    int end, [
+    String replacer = '..',
+  ]) =>
+      map((k, v) {
+        late final dynamic r;
+        if (v is String && (v.isUuid || v.isUuidWithPrefix())) {
+          r = v.bittenOf(begin, end, replacer);
+        } else if (v is Map<String, dynamic>) {
+          r = v._bittenOf(begin, end, replacer);
+        } else if (v is List<dynamic>) {
+          r = v.bittenOf(begin, end, replacer);
+        } else if (v is Set<dynamic>) {
+          r = v.bittenOf(begin, end, replacer);
+        } else {
+          r = v;
+        }
+
+        return MapEntry(k, r);
+      });
 }
