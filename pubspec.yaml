@@ -1,6 +1,6 @@
 name: id_gen
-description: A set of IDs generators.
-version: 0.2.0
+description: A standartized set of IDs generators.
+version: 0.1.0
 publish_to: "none"
 
 environment:
