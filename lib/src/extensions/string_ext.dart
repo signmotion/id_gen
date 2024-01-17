@@ -1,3 +1,4 @@
+/// Copied from `dart_helpers`.
 extension StringExt on String {
   /// Left [begin] first and [end] last symbols.
   /// Before them will insert [replacer].
