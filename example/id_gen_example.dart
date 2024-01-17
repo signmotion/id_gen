@@ -3,16 +3,18 @@
 import 'package:id_gen/id_gen.dart';
 
 void main() {
+  // generate random UUIDs
   {
     const gen = UuidV4Gen();
     for (var i = 0; i < 4; ++i) {
-      print('id: ${gen.get()}');
+      print(gen.get());
     }
   }
 
+  // generate HID from Ukrainian
   {
     const gen = HumanIdGen(options: HumanIdGenOptions(lowerCase: true));
-    final id = gen.get('Тема статті чи назва курсу');
-    print('id: $id');
+    final hid = gen.get('Тема статті чи назва курсу');
+    print(hid);
   }
 }
