@@ -1,7 +1,13 @@
 name: id_gen
 description: A standartized set of IDs generators.
+homepage: https://github.com/signmotion/id_gen
+
+# Format:
+#   version: major.minor.patch
+# You can calculate the number version code by this formula:
+#   code = m[A]jor * 100 * 100 + m[I]nor * 100 + [P]atch
+# Otherwise: +AAIIPP
 version: 0.1.0
-publish_to: "none"
 
 environment:
   sdk: ">=3.0.0 <4.0.0"
