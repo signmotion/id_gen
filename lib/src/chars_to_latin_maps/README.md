@@ -1,9 +1,5 @@
-# Map for converting cyrillic symbols to latin
+# Maps for Converting Any Symbols to Latin
 
-# Thanks
+## Thanks
 
-https://github.com/dekoder-org/transkribator/tree/main/src/langs
-
-# TODO
-
-- Add more languages. See https://github.com/bengourley/slugg/blob/master/slugg.js
+<https://github.com/dekoder-org/transkribator/tree/main/src/langs>
