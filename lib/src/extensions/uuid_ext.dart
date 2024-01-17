@@ -1,4 +1,4 @@
-import 'package:dart_helpers/dart_helpers.dart';
+import 'string_ext.dart';
 
 extension UuidStringExt on String {
   static const detector =
@@ -12,6 +12,7 @@ extension UuidStringExt on String {
   bool get isNotUuid => !isUuid;
 
   /// 's-44030040-ca6d-43a3-9fda-0d121401f268'.isUuidWithPrefix('s') == true
+  /// TODO Separate `prefix` extractor as getter.
   bool isUuidWithPrefix([String prefix = '']) {
     assert(!prefix.contains('-'), 'The symbol `-` restricted for prefix.');
 
@@ -50,12 +51,15 @@ extension UuidStringExt on String {
 
   static const bittenOfReplacer = ':';
 
-  /// Left 3 first and 2 last symbols. Before them will able [bittenOfReplacer].
+  /// Left 3 first and 2 last symbols. Between them will be [bittenOfReplacer].
+  /// TODO Count on prefix.
+  /// TODO Rename to `*12`.
   String get bittenOfUuid32 => isUuid || isUuidWithPrefix()
       ? trim().bittenOf(3, 2, bittenOfReplacer)
       : this;
 
-  /// Left 4 first and 4 last symbols. Before them will able [bittenOfReplacer].
+  /// Left 4 first and 4 last symbols. Between them will be [bittenOfReplacer].
+  /// TODO Count on prefix.
   String get bittenOfUuid44 => isUuid || isUuidWithPrefix()
       ? trim().bittenOf(4, 4, bittenOfReplacer)
       : this;
@@ -68,7 +72,7 @@ extension UuidStringExt on String {
 
   /// Bitten of all UUIDs into the text.
   /// Left [begin] first and [end] last symbols in each UUID.
-  /// Before them will insert [replacer].
+  /// Between them will be [replacer].
   /// See [bittenOfUuid32], [bittenOfUuid44].
   String bittenOfAllUuids(
     int begin,

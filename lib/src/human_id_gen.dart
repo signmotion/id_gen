@@ -1,6 +1,5 @@
-import 'package:dart_helpers/dart_helpers.dart';
-
 import 'chars_to_latin_maps/all.dart' as chars_to_latin_maps_all;
+import 'extensions/string_ext.dart';
 import 'id_gen_base.dart';
 
 /// Short name for [HumanIdGen].
