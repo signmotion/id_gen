@@ -46,6 +46,26 @@ Output:
 tema-stati-chy-nazva-kursu
 ```
 
+### Generate Transit Integer ID
+
+```dart
+final id = TransitIdGen();
+print(id.get());
+// or
+print(id.next);
+```
+
+Output:
+
+```sh
+1
+2
+```
+
+## License
+
+[MIT](LICENSE)
+
 ## TODO
 
 - Feautures for this package into README.
