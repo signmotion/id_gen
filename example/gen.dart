@@ -17,4 +17,19 @@ void main() {
     final hid = gen.get('Тема статті чи назва курсу');
     print(hid);
   }
+
+  // generate increasing unique integer ID
+  {
+    final gen = TransitIdGen();
+    print(gen.get());
+    // or
+    final id = TransitId();
+    print(id.next);
+  }
+
+  // generate deccreasing unique integer ID
+  {
+    final gen = TransitIdGen(1050, -50);
+    print(gen.get());
+  }
 }
