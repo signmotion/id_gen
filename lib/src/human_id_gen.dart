@@ -50,6 +50,9 @@ class HumanIdGen extends IdGenBase<String> {
 
     return r;
   }
+
+  @override
+  String get next => throw UnimplementedError();
 }
 
 /// Short name for [HumanIdGenOptions].

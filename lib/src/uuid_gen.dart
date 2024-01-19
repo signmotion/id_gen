@@ -4,16 +4,6 @@ import 'package:uuid/uuid.dart';
 
 import 'id_gen_base.dart';
 
-/// UUID generator.
-class UuidGen extends IdGenBase<Uuid> {
-  const UuidGen({this.options});
-
-  final GlobalOptions? options;
-
-  @override
-  Uuid get([dynamic source]) => Uuid(goptions: options);
-}
-
 /// UUID v4 generator.
 class UuidV4Gen extends IdGenBase<String> {
   const UuidV4Gen({this.options});
@@ -27,5 +17,8 @@ class UuidV4Gen extends IdGenBase<String> {
   RNG get rng => CryptoRNG();
 
   @override
-  String get([dynamic source]) => gen.v4(config: V4Options(random, rng));
+  String get([dynamic source]) => next;
+
+  @override
+  String get next => gen.v4(config: V4Options(random, rng));
 }
