@@ -57,7 +57,7 @@ foo(f1,
 ### Imports
 
 - Never include unused or duplicated imports.
-- You must always use relative imports for imports within the IdGen library
+- You must always use relative imports for imports within the `IdGen` library
   (internal imports must be relative).
 - Omit `./` for relative imports from the same directory.
 - Avoid importing groups of APIs internally.
