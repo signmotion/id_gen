@@ -2,7 +2,7 @@ import 'package:id_gen/id_gen.dart';
 import 'package:test/test.dart';
 
 void main() {
-  const gen = UuidV4Gen();
+  const gen = UuidGen();
 
   test('generate many UUIDs', () {
     var prevId = '';

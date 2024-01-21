@@ -11,7 +11,7 @@ The standartized and well-tested set for generate identifiers.
 About UUID (online generator): <https://uuidgenerator.net>
 
 ```dart
-const gen = UuidV4Gen();
+const gen = UuidGen();
 for (var i = 0; i < 4; ++i) {
     print(gen.get());
 }

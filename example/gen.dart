@@ -5,9 +5,9 @@ import 'package:id_gen/id_gen.dart';
 void main() {
   // generate random UUIDs
   {
-    const gen = UuidV4Gen();
+    const gen = UuidGen();
     for (var i = 0; i < 4; ++i) {
-      print(gen.get());
+      print(gen.next);
     }
   }
 

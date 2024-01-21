@@ -4,6 +4,8 @@ import 'package:uuid/uuid.dart';
 
 import 'id_gen_base.dart';
 
+typedef UuidGen = UuidV4Gen;
+
 /// UUID v4 generator.
 class UuidV4Gen extends IdGenBase<String> {
   const UuidV4Gen({this.options});
