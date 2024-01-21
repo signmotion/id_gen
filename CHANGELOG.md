@@ -3,6 +3,10 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.2.1
+
+- Shorted `UuidV4Gen` to `UuidGen` (as alias).
+
 ## 0.2.0
 
 - Introduced `TransitId` and `TransitIdGen`.
