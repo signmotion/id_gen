@@ -11,9 +11,8 @@ The standartized and well-tested set for generate identifiers.
 About UUID (online generator): <https://uuidgenerator.net>
 
 ```dart
-const gen = UuidGen();
 for (var i = 0; i < 4; ++i) {
-    print(gen.get());
+    print(genUuid);
 }
 ```
 
@@ -49,10 +48,9 @@ tema-stati-chy-nazva-kursu
 ### Generate Transit Integer ID
 
 ```dart
-final id = TransitIdGen();
-print(id.get());
+print(genTransitId);
 // or
-print(id.next);
+print(TransitId().next);
 ```
 
 Output:
@@ -61,6 +59,23 @@ Output:
 1
 2
 ```
+
+### Generate Time Integer ID
+
+```dart
+print(genTimeId);
+// or
+print(genTimeIdMicro);
+```
+
+Output:
+
+```sh
+1705954581187
+1705954581188687
+```
+
+Note that second ID does not fit into 53 bits (the size of a IEEE double). A JavaScript number is not able to hold this value.
 
 ## License
 
