@@ -1,9 +1,17 @@
 // ignore_for_file: avoid_print
 
 import 'package:id_gen/id_gen.dart';
+import 'package:id_gen/id_gen_helpers.dart';
 
 void main() {
-  // generate random UUIDs
+  // generate random UUIDs, helper
+  {
+    for (var i = 0; i < 4; ++i) {
+      print(genUuid);
+    }
+  }
+
+  // generate random UUIDs, native
   {
     const gen = UuidGen();
     for (var i = 0; i < 4; ++i) {
@@ -18,18 +26,30 @@ void main() {
     print(hid);
   }
 
-  // generate increasing unique integer ID
+  // generate increasing unique integer ID, helper
   {
-    final gen = TransitIdGen();
-    print(gen.get());
+    print(TransitIdGen().get());
     // or
-    final id = TransitId();
-    print(id.next);
+    print(genTransitId);
   }
 
-  // generate deccreasing unique integer ID
+  // generate decreasing unique integer ID
   {
     final gen = TransitIdGen(1050, -50);
     print(gen.get());
+  }
+
+  // generate time IDs in milliseconds, helper
+  {
+    for (var i = 0; i < 4; ++i) {
+      print(genTimeId);
+    }
+  }
+
+  // generate time IDs in microseconds, helper
+  {
+    for (var i = 0; i < 4; ++i) {
+      print(genTimeIdMicro);
+    }
   }
 }
