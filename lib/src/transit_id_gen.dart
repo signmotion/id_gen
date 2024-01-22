@@ -1,9 +1,6 @@
 import 'id_gen_base.dart';
 import 'transit_id.dart';
 
-/// Short name for [TransitIdGen].
-typedef TidGen = TransitIdGen;
-
 /// Transit integer ID generator.
 class TransitIdGen extends IdGenBase<int> {
   TransitIdGen([int firstId = 0, int delta = 1])
