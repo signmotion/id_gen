@@ -7,10 +7,10 @@ void main() {
   test('transit IDs gen, positive', () {
     final gen = TransitIdGen();
     for (var i = 0; i < 4; ++i) {
-      final next = gen.get();
-      expect(next, greaterThan(prevId));
-      expect([1, 2, 3, 4][i], next);
-      prevId = next;
+      final id = gen.next;
+      expect(id, greaterThan(prevId));
+      expect([1, 2, 3, 4][i], id);
+      prevId = id;
     }
   });
 
@@ -20,10 +20,10 @@ void main() {
     expect(gen.delta, -400);
     prevId = 1400;
     for (var i = 0; i < 4; ++i) {
-      final next = gen.get();
-      expect(next, lessThan(prevId));
-      expect([1000, 600, 200, -200][i], next);
-      prevId = next;
+      final id = gen.next;
+      expect(id, lessThan(prevId));
+      expect([1000, 600, 200, -200][i], id);
+      prevId = id;
     }
     expect(gen.current, 1400 - 400 * 4);
   });

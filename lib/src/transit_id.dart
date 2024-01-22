@@ -9,7 +9,7 @@ class TransitId {
 
   int get current => _id;
 
-  int _id;
-
   final int delta;
+
+  int _id;
 }
