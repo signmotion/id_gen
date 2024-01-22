@@ -7,7 +7,7 @@ void main() {
   test('generate many UUIDs', () {
     var prevId = '';
     for (var i = 0; i < 4; ++i) {
-      final id = gen.get();
+      final id = gen.next;
       expect(id != prevId, isTrue, reason: '$id == $prevId');
       prevId = id;
     }
