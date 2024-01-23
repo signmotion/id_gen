@@ -1,4 +1,5 @@
 import 'package:id_gen/id_gen.dart';
+import 'package:id_gen/id_gen_tests.dart';
 import 'package:test/test.dart';
 
 void main() {

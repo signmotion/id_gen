@@ -2,8 +2,7 @@ library;
 
 export 'src/extensions/uuid_ext.dart';
 
-export 'src/test_matchers/is_uuid.dart';
-export 'src/test_matchers/is_uuid_with_prefix.dart';
+export 'src/mixins/has_id_mix.dart';
 
 export 'src/human_id_gen.dart';
 export 'src/id_gen_base.dart';
