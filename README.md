@@ -77,6 +77,27 @@ Output:
 
 Note that second ID does not fit into 53 bits (the size of a IEEE double). A JavaScript number is not able to hold this value.
 
+### Add HID and UID to Any Class
+
+```dart
+class Quant with HasStringIdMix {
+  Quant({String? hid, String? uid}) {
+    this.hid = hid;
+    this.uid = uid;
+  }
+}
+
+print(Quant().id);
+print(Quant(hid: 'aerwyna').id);
+```
+
+Output:
+
+```sh
+92e6ee3e-537a-4dd3-b4e9-06b8fd366469
+aerwyna
+```
+
 ## License
 
 [MIT](LICENSE)
