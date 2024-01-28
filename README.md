@@ -4,7 +4,7 @@
 
 The standartized and well-tested set for generate identifiers.
 
-## Examples
+## Usage
 
 ### Generate 4 UUIDs
 
