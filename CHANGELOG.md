@@ -3,6 +3,10 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.4.1
+
+- Added more tests to `HasStringIdMix`.
+
 ## 0.4.0
 
 - Introduced `HasStringIdMix` for adding a Human and Unique IDs to objects.

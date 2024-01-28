@@ -8,6 +8,7 @@ topics:
   - uuid
   - time
   - random
+  - tools
 
 # Format:
 #   version: major.minor.patch
