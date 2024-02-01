@@ -1,8 +1,11 @@
+/// Replacer for shrinked string.
+String get stringBittenOfReplacer => '..';
+
 /// Copied from `dart_helpers`.
 extension StringExt on String {
   /// Left [begin] first and [end] last symbols.
   /// Before them will insert [replacer].
-  String bittenOf(int begin, int end, [String replacer = '..']) {
+  String bittenOf(int begin, int end, [String? replacer]) {
     if (isEmpty) {
       return this;
     }
@@ -21,7 +24,7 @@ extension StringExt on String {
     final a = substring(0, pbegin);
     final b = substring(length - pend);
 
-    return '$a$replacer$b';
+    return '$a${replacer ?? stringBittenOfReplacer}$b';
   }
 
   String get removedDoubleSpaces => replaceAll(RegExp(r'\s+'), ' ');
