@@ -16,7 +16,7 @@ mixin HasStringIdMix on Object {
 
   bool get hasHid => hid.isNotEmpty;
 
-  bool get isCorrectHid => hid.isNotEmpty;
+  bool get isCorrectHid => RegExp(r'^[a-z0-9_]*$').hasMatch(hid);
 
   /// UUID.
   /// Trimming spaces into setter.
