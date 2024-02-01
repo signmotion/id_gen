@@ -16,6 +16,8 @@ mixin HasStringIdMix on Object {
 
   bool get hasHid => hid.isNotEmpty;
 
+  bool get isCorrectHid => hid.isNotEmpty;
+
   /// UUID.
   /// Trimming spaces into setter.
   /// Generate a UUID when set to null.
