@@ -100,10 +100,6 @@ Output:
 aerwyna
 ```
 
-## License
-
-[MIT](LICENSE)
-
 ## Welcome
 
 This package is open-source, stable and well-tested. Development happens on
