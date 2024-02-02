@@ -102,6 +102,15 @@ aerwyna
 
 [MIT](LICENSE)
 
+## Welcome
+
+This package is open-source, stable and well-tested. Development happens on
+[GitHub](https://github.com/signmotion/id_gen). Feel free to report issues
+or create a pull-request there.
+
+General questions are best asked on
+[StackOverflow](https://stackoverflow.com/questions/tagged/id_gen).
+
 ## TODO
 
 - Feautures for this package into README.
