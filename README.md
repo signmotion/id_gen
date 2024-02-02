@@ -2,6 +2,8 @@
 
 ![Cover - ID Generators](https://raw.githubusercontent.com/signmotion/id_gen/master/images/cover.webp)
 
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/signmotion/id_gen/master/LICENSE)
+
 The standartized and well-tested set for generate identifiers.
 
 ## Usage
