@@ -1,7 +1,8 @@
 name: id_gen
-description: A standartized and well-tested set of IDs generators.
+description: >-
+  A standartized and well-tested set of IDs generators: globally unique, readable,
+  time-dependency, transitive, incremental, decremental IDs.
 repository: https://github.com/signmotion/id_gen
-
 topics:
   - generator
   - id

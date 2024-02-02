@@ -4,7 +4,8 @@
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/signmotion/id_gen/master/LICENSE)
 
-The standartized and well-tested set for generate identifiers.
+The standartized and well-tested set for generate identifiers: globally unique, readable,
+time-dependency, transitive, incremental, decremental IDs.
 
 ## Usage
 
