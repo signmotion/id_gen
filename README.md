@@ -4,7 +4,7 @@
 
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/signmotion/id_gen/master/LICENSE)
 
-The standartized and well-tested set for generate identifiers: globally unique, readable,
+The standartized, easy-to-use and well-tested set for generate identifiers: globally unique, readable,
 time-dependency, transitive, incremental, decremental IDs.
 
 ## Usage
@@ -15,13 +15,13 @@ About UUID (online generator): <https://uuidgenerator.net>
 
 ```dart
 for (var i = 0; i < 4; ++i) {
-    print(genUuid);
+  print(genUuid);
 }
 ```
 
 Output:
 
-```sh
+```text
 490833da-4976-4563-8c8a-9f5464a2bf7e
 e82e3bf5-c3ea-46d6-a835-12644b99cf6e
 4d86c01f-777b-4599-b28f-c87c3737c8e2
@@ -44,7 +44,7 @@ print(hid);
 
 Output:
 
-```sh
+```text
 tema-stati-chy-nazva-kursu
 ```
 
@@ -58,7 +58,7 @@ print(TransitId().next);
 
 Output:
 
-```sh
+```text
 1
 2
 ```
@@ -73,7 +73,7 @@ print(genTimeIdMicro);
 
 Output:
 
-```sh
+```text
 1705954581187
 1705954581188687
 ```
@@ -96,7 +96,7 @@ print(Quant(hid: 'aerwyna').id);
 
 Output:
 
-```sh
+```text
 92e6ee3e-537a-4dd3-b4e9-06b8fd366469
 aerwyna
 ```
