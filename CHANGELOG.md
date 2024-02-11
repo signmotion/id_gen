@@ -3,6 +3,13 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.5.0
+
+- Introduced `stringBittenOfReplacer`, `uuidBittenOfReplacer` and `uuidPrefixSeparator` extensions.
+- Introduced `HasStringIdMix.isCorrectHid`.
+- Updated `LICENSE`, `README`, `SECURITY` and description of package.
+- Upgraded dependencies.
+
 ## 0.4.1
 
 - Added more tests to `HasStringIdMix`.
