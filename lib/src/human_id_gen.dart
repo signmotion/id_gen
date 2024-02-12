@@ -13,14 +13,14 @@ class HumanIdGen extends IdGenBase<String> {
 
   @override
   String get([dynamic source]) {
-    var r = (source as String);
+    var r = source as String;
 
-    final replaces = options.replaces ?? HumanIdGenOptions.defaultReplaces;
+    final replaces = options.replaces;
     for (final entry in replaces.entries) {
       r = r.replaceAll(entry.key, entry.value);
     }
 
-    final removes = options.removes ?? HumanIdGenOptions.defaultRemoves;
+    final removes = options.removes;
     for (final ch in removes) {
       r = r.replaceAll(ch, '');
     }
@@ -61,8 +61,9 @@ typedef HidGenOptions = HumanIdGenOptions;
 /// Options for [HumanIdGen].
 class HumanIdGenOptions {
   const HumanIdGenOptions({
-    this.replaces,
-    this.removes,
+    this.separator = defaultSeparator,
+    this.replaces = defaultConstReplaces,
+    this.removes = defaultConstRemoves,
     this.squeezeRepeated = true,
     this.trimSpacesInSource = true,
     this.trimSeparatorsInSource = true,
@@ -103,17 +104,17 @@ class HumanIdGenOptions {
   /// Case sensitivity.
   static const List<String> defaultRemoves = [...defaultConstRemoves];
 
-  String get separator => defaultSeparator;
+  final String separator;
 
   /// These strings will be replaces.
   /// Doing it before processed [removes].
   /// Case sensitivity.
-  final Map<String, String>? replaces;
+  final Map<String, String> replaces;
 
   /// These strings will be removed.
   /// Doing it after processed [replaces].
   /// Case sensitivity.
-  final List<String>? removes;
+  final List<String> removes;
 
   /// Will replace a sequence of [defaultReplaces] characters to single
   /// character.
