@@ -3,6 +3,10 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.0
+
+- Added `separator` to `HumanIdGen`.
+
 ## 0.5.0
 
 - Introduced `stringBittenOfReplacer`, `uuidBittenOfReplacer` and `uuidPrefixSeparator` extensions.
