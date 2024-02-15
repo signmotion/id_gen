@@ -27,7 +27,7 @@ class HumanIdGen extends IdGenBase<String> {
 
     // replace others non-word chars with separator
     final separator = options.separator;
-    r = r.replaceAll(RegExp(r'[\W|_]+'), separator);
+    r = r.replaceAll(RegExp(r'[\W]+'), separator);
 
     if (options.squeezeRepeated) {
       r = r.removedDoubleChars;
