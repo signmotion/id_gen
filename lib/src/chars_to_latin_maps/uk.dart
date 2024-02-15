@@ -1,4 +1,4 @@
-const Map<String, String> lowercaseMap = <String, String>{
+const lowercaseMap = <String, String>{
   'а': 'a',
   'б': 'b',
   'в': 'v',
@@ -35,10 +35,10 @@ const Map<String, String> lowercaseMap = <String, String>{
   '\'': '',
 };
 
-final Map<String, String> uppercaseMap = lowercaseMap
+final uppercaseMap = lowercaseMap
     .map((key, value) => MapEntry(key.toUpperCase(), value.toUpperCase()));
 
-final Map<String, String> map = <String, String>{
+final map = <String, String>{
   ...lowercaseMap,
   ...uppercaseMap,
 };
