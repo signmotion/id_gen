@@ -3,6 +3,12 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.6.1
+
+- `HumanIdGen`. Fixed an ignore character '\_' when separator is not '\_'.
+- Added a configuration for markdown linter.
+- Fixed link to issues in `CONTRIBUTING`.
+
 ## 0.6.0
 
 - Added `separator` to `HumanIdGen`.
