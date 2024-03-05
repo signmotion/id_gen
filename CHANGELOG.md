@@ -3,6 +3,10 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.0
+
+- Introduced `HasIdMix.same()`.
+
 ## 0.6.2
 
 - Updated `README`.
