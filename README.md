@@ -6,6 +6,7 @@
 
 The standartized, easy-to-use and well-tested set for generate identifiers: globally unique, readable,
 time-dependency, transitive, incremental, decremental IDs.
+Feel free to use it in your projects.
 
 ## Usage
 
@@ -102,6 +103,8 @@ aerwyna
 ```
 
 ## Welcome
+
+Requests and suggestions are warmly welcome.
 
 This package is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/id_gen). Feel free to report issues
