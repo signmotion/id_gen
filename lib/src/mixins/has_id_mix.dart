@@ -37,4 +37,8 @@ mixin HasStringIdMix on Object {
 
   /// Auto-detect to set [uid] or [hid].
   set id(String uidOrHid) => uidOrHid.isUuid ? uid = uidOrHid : hid = uidOrHid;
+
+  /// Equals by [uid] or [hid].
+  bool same(String uidOrHid) =>
+      uidOrHid.isNotEmpty && (uidOrHid == uid || uidOrHid == hid);
 }
