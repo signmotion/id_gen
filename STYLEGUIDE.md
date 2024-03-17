@@ -104,12 +104,12 @@ and the comment, capitalized as a sentence. No need to include a period if it's 
 // bad: missing identifier, mixed-case "TODO" and lowercase comment
 
 // Todo: this thing should be that thing
-final thisThing = 13;
+final thisThing = 12;
 
 // good:
 
 // TODO(wolfenrain): This thing should be that thing
-const thisThing = 13;
+const thisThing = 12;
 ```
 
 ### Dartdocs
