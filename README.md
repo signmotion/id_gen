@@ -2,11 +2,14 @@
 
 ![Cover - ID Generators](https://raw.githubusercontent.com/signmotion/id_gen/master/images/cover.webp)
 
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://raw.githubusercontent.com/signmotion/id_gen/master/LICENSE)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+[![Pub Package](https://img.shields.io/badge/doc-id_gen-blue)](https://pub.dartlang.org/packages/id_gen)
+[![Build Status](https://github.com/signmotion/id_gen/actions/workflows/dart-ci.yml/badge.svg)](https://github.com/signmotion/id_gen/actions/workflows/dart-ci.yml)
+[![Publisher](https://img.shields.io/pub/publisher/id_gen)](https://pub.dev/publishers/syrokomskyi.com)
 
 The standartized, easy-to-use and well-tested set for generate identifiers: globally unique, readable,
 time-dependency, transitive, incremental, decremental IDs.
-Feel free to use it in your projects that are useful to the world.
+Feel free to use it in your awesome projects.
 
 ## Usage
 
