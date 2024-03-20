@@ -9,7 +9,7 @@
 
 The standartized, easy-to-use and well-tested set for generate identifiers: globally unique, readable,
 time-dependency, transitive, incremental, decremental IDs.
-Feel free to use it in your awesome projects.
+Feel free to use it in your awesome project.
 
 ## Usage
 
