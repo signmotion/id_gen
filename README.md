@@ -23,8 +23,6 @@ for (var i = 0; i < 4; ++i) {
 }
 ```
 
-Output:
-
 ```text
 490833da-4976-4563-8c8a-9f5464a2bf7e
 e82e3bf5-c3ea-46d6-a835-12644b99cf6e
@@ -46,8 +44,6 @@ final hid = gen.get('Тема статті чи назва курсу');
 print(hid);
 ```
 
-Output:
-
 ```text
 tema-stati-chy-nazva-kursu
 ```
@@ -59,8 +55,6 @@ print(genTransitId);
 // or
 print(TransitId().next);
 ```
-
-Output:
 
 ```text
 1
@@ -74,8 +68,6 @@ print(genTimeId);
 // or
 print(genTimeIdMicro);
 ```
-
-Output:
 
 ```text
 1705954581187
@@ -97,8 +89,6 @@ class Quant with HasStringIdMix {
 print(Quant().id);
 print(Quant(hid: 'aerwyna').id);
 ```
-
-Output:
 
 ```text
 92e6ee3e-537a-4dd3-b4e9-06b8fd366469
