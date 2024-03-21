@@ -115,3 +115,7 @@ General questions are best asked on
 - Feautures for this package into README.
 - Example of HID generation in your own language.
 - More predefined languages. See <https://github.com/bengourley/slugg/blob/master/slugg.js>
+
+---
+
+Created [with ❤️](https://syrokomskyi.com)
