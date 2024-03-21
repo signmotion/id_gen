@@ -3,6 +3,10 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.2
+
+- Added badges to `README`.
+
 ## 0.7.1
 
 - Added CI for GitHub.
