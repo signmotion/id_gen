@@ -18,6 +18,12 @@ Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
 
+## Platforms
+
+| Android | iOS | Linux | MacOS | Web | Windows |
+| :-----: | :-: | :---: | :---: | :-: | :-----: |
+|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
+
 ## Usage
 
 ### Generate 4 UUIDs
