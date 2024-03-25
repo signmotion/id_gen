@@ -12,8 +12,7 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/issues)
 [![Pub Score](https://img.shields.io/pub/points/id_gen?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/id_gen/score)
 
-The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable,
-time-dependency, transitive, incremental, decremental IDs.
+The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable, time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
@@ -116,7 +115,7 @@ Contributions are what make the open-source community such a great place to lear
 
 If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
 
-- [Guide to making a first contribution](https://github.com/firstcontributions/first-contributions). Many languages.
+- [Guide to making a first contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
 - [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
 
