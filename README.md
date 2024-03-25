@@ -12,7 +12,7 @@
 [![Issues](https://img.shields.io/github/issues/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/issues)
 [![Pub Score](https://img.shields.io/pub/points/id_gen?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/id_gen/score)
 
-The standartized, easy-to-use and well-tested set for generate identifiers: globally unique, readable,
+The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable,
 time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
