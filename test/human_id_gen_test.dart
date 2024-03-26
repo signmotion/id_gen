@@ -19,69 +19,77 @@ void main() {
     ),
   );
 
-  test('generate ID by string with latin chars', () {
-    // without spaces
-    expect(gen.get('abcxyz'), 'abcxyz');
-    expect(gen.get('ABCXYZ'), 'ABCXYZ');
-    expect(gen.get('abcXYZ'), 'abcXYZ');
+  group('generate ID by string with latin chars', () {
+    test('no spaces', () {
+      expect(gen.get('abcxyz'), 'abcxyz');
+      expect(gen.get('ABCXYZ'), 'ABCXYZ');
+      expect(gen.get('abcXYZ'), 'abcXYZ');
+    });
 
-    // with spaces
-    expect(gen.get('abc XYZ'), 'abc-XYZ');
-    expect(gen.get(' abc      XYZ    '), 'abc-XYZ');
+    test('with spaces', () {
+      expect(gen.get('abc XYZ'), 'abc-XYZ');
+      expect(gen.get(' abc      XYZ    '), 'abc-XYZ');
+    });
 
-    // with `-`
-    expect(gen.get('abc-XYZ'), 'abc-XYZ');
-    expect(gen.get('   abc  -      XYZ '), 'abc-XYZ');
-    expect(gen.get('   abc  -  ---    XYZ '), 'abc-XYZ');
+    test('with `-`', () {
+      expect(gen.get('abc-XYZ'), 'abc-XYZ');
+      expect(gen.get('   abc  -      XYZ '), 'abc-XYZ');
+      expect(gen.get('   abc  -  ---    XYZ '), 'abc-XYZ');
+    });
 
-    // with `-` on the edges
-    expect(gen.get('-abc-XYZ'), 'abc-XYZ');
-    expect(gen.get(' -  abc  -      XYZ - '), 'abc-XYZ');
-    expect(gen.get('-   --abc  -  ---    XYZ --'), 'abc-XYZ');
+    test('with `-` on the edges', () {
+      expect(gen.get('-abc-XYZ'), 'abc-XYZ');
+      expect(gen.get(' -  abc  -      XYZ - '), 'abc-XYZ');
+      expect(gen.get('-   --abc  -  ---    XYZ --'), 'abc-XYZ');
+    });
 
-    // with `_`
-    expect(gen.get('abc_XYZ'), 'abc-XYZ');
-    expect(gen.get('   abc  _      XYZ '), 'abc-XYZ');
-    expect(gen.get('   abc  _ ___     XYZ '), 'abc-XYZ');
+    test('with `_`', () {
+      expect(gen.get('abc_XYZ'), 'abc-XYZ');
+      expect(gen.get('   abc  _      XYZ '), 'abc-XYZ');
+      expect(gen.get('   abc  _ ___     XYZ '), 'abc-XYZ');
+    });
 
-    // with removes
-    expect(gen.get('abcQXYZ'), 'abcXYZ');
-    expect(gen.get('abc Q XYZ'), 'abc-XYZ');
+    test('with removes', () {
+      expect(gen.get('abcQXYZ'), 'abcXYZ');
+      expect(gen.get('abc Q XYZ'), 'abc-XYZ');
+    });
 
-    // with replaces
-    expect(gen.get('abcWXYZ'), 'abcVXYZ');
-    expect(gen.get('abc W XYZ'), 'abc-V-XYZ');
+    test('with replaces', () {
+      expect(gen.get('abcWXYZ'), 'abcVXYZ');
+      expect(gen.get('abc W XYZ'), 'abc-V-XYZ');
+    });
   });
 
-  test('generate ID by string with cyrillic chars', () {
-    // without spaces
-    expect(
-      gen.get('абвгґдеєжзиіїйклмнопрстуфхцчшщьюяэй'),
-      'abvhgdeiezhzyiklmnoprstufkhtschshshchiuiaei',
-    );
-    expect(
-      gen.get('АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
-      'ABVHGDEIEZHZYIKLMNOPRSTUFKHTSCHSHSHCHIUIAEI',
-    );
-    expect(
-      gen.get('абвгґдеєжзиіїйклМНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
-      'abvhgdeiezhzyiklMNOPRSTUFKHTSCHSHSHCHIUIAEI',
-    );
+  group('generate ID by string with cyrillic chars', () {
+    test('no spaces', () {
+      expect(
+        gen.get('абвгґдеєжзиіїйклмнопрстуфхцчшщьюяэй'),
+        'abvhgdeiezhzyiklmnoprstufkhtschshshchiuiaei',
+      );
+      expect(
+        gen.get('АБВГҐДЕЄЖЗИІЇЙКЛМНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
+        'ABVHGDEIEZHZYIKLMNOPRSTUFKHTSCHSHSHCHIUIAEI',
+      );
+      expect(
+        gen.get('абвгґдеєжзиіїйклМНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
+        'abvhgdeiezhzyiklMNOPRSTUFKHTSCHSHSHCHIUIAEI',
+      );
+    });
 
-    // with spaces
-    expect(
-      gen.get('абвгґдеєжзиіїйкл МНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
-      'abvhgdeiezhzyikl-MNOPRSTUFKHTSCHSHSHCHIUIAEI',
-    );
-    expect(
-      gen.get(' абвгґдеєжзиіїйкл      МНОПРСТУФХЦЧШЩЬЮЯЭЙ    '),
-      'abvhgdeiezhzyikl-MNOPRSTUFKHTSCHSHSHCHIUIAEI',
-    );
+    test(' with spaces', () {
+      expect(
+        gen.get('абвгґдеєжзиіїйкл МНОПРСТУФХЦЧШЩЬЮЯЭЙ'),
+        'abvhgdeiezhzyikl-MNOPRSTUFKHTSCHSHSHCHIUIAEI',
+      );
+      expect(
+        gen.get(' абвгґдеєжзиіїйкл      МНОПРСТУФХЦЧШЩЬЮЯЭЙ    '),
+        'abvhgdeiezhzyikl-MNOPRSTUFKHTSCHSHSHCHIUIAEI',
+      );
+    });
   });
 
   test('generate ID by string with unsafe URL chars', () {
     expect(gen.get('abc"`”“\'xyz'), 'abcxyz');
-
     expect(gen.get(r'abc~!#$%^&*()\,./<>@|-+xyz'), 'abc-xyz');
   });
 }

@@ -4,12 +4,14 @@ import 'package:test/test.dart';
 void main() {
   const gen = UuidGen();
 
-  test('generate many UUIDs', () {
-    var prevId = '';
-    for (var i = 0; i < 4; ++i) {
-      final id = gen.next;
-      expect(id != prevId, isTrue, reason: '$id == $prevId');
-      prevId = id;
-    }
+  group('generate', () {
+    test('many unique UUIDs', () {
+      final generated = <String>{};
+      for (var i = 0; i < 1200000; ++i) {
+        final id = gen.next;
+        expect(id, isNot(contains(generated)));
+        generated.add(id);
+      }
+    });
   });
 }

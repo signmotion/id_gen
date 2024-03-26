@@ -10,29 +10,29 @@ class Quant with HasStringIdMix {
 }
 
 void main() {
-  group('HasStringIdMix', () {
-    test('construct, empty HID, empty UID', () {
+  group('construct', () {
+    test('empty HID, empty UID', () {
       final quant = Quant();
       expect(quant.hid, isEmpty);
       expect(quant.uid, isUuid);
       expect(quant.id, quant.uid);
     });
 
-    test('construct, filled HID, empty UID', () {
+    test('filled HID, empty UID', () {
       final quant = Quant(hid: 'aerwyna');
       expect(quant.hid, 'aerwyna');
       expect(quant.uid, isUuid);
       expect(quant.id, quant.hid);
     });
 
-    test('construct, empty HID, filled UID', () {
+    test('empty HID, filled UID', () {
       final quant = Quant(uid: '92e6ee3e-537a-4dd3-b4e9-06b8fd366469');
       expect(quant.hid, isEmpty);
       expect(quant.uid, '92e6ee3e-537a-4dd3-b4e9-06b8fd366469');
       expect(quant.id, quant.uid);
     });
 
-    test('construct many', () {
+    test('many', () {
       var prevUid = '';
       for (var i = 0; i < 4; ++i) {
         final quant = Quant();
