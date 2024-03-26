@@ -15,13 +15,15 @@
 The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable, time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
-Share some ❤️ and ⭐ repo to support the project.
+Share some ❤️ and star repo to support the project.
 
-## Platforms
+|          | Android | iOS | Linux | MacOS | Web | Windows |
+| :------- | :-----: | :-: | :---: | :---: | :-: | :-----: |
+| Platform |   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
 
-| Android | iOS | Linux | MacOS | Web | Windows |
-| :-----: | :-: | :---: | :---: | :-: | :-----: |
-|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
+|     | Dart | Flutter |
+| :-- | :--: | :-----: |
+| SDK |  ✅  |   ✅    |
 
 ## Usage
 
