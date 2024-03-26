@@ -4,49 +4,48 @@ import 'package:id_gen/id_gen.dart';
 import 'package:id_gen/id_gen_helpers.dart';
 
 void main() {
-  // generate random UUIDs, helper
+  print('\ngenerate random UUIDs, helper');
   {
-    for (var i = 0; i < 4; ++i) {
-      print(genUuid);
-    }
+    print([for (var i = 0; i < 4; ++i) genUuid]);
   }
 
-  // generate random UUIDs, native
+  print('\ngenerate random UUIDs, native');
   {
     const gen = UuidGen();
-    for (var i = 0; i < 4; ++i) {
-      print(gen.next);
-    }
+    print([for (var i = 0; i < 4; ++i) gen.next]);
+    // or
+    print([for (var i = 0; i < 4; ++i) genUuid]);
   }
 
-  // generate HID from Ukrainian
+  print('\ngenerate HID from Ukrainian');
   {
     const gen = HumanIdGen(options: HumanIdGenOptions(lowerCase: true));
     final hid = gen.get('Тема статті чи назва курсу');
     print(hid);
   }
 
-  // generate increasing unique integer ID, helper
+  print('\ngenerate increasing unique integer ID, helper');
   {
-    print(TransitIdGen().get());
+    final gen = TransitIdGen();
+    print([for (var i = 0; i < 4; ++i) gen.next]);
     // or
-    print(genTransitId);
+    print([for (var i = 0; i < 4; ++i) genTransitId]);
   }
 
-  // generate decreasing unique integer ID
+  print('\ngenerate decreasing unique integer ID');
   {
     final gen = TransitIdGen(1050, -50);
-    print(gen.get());
+    print([for (var i = 0; i < 4; ++i) gen.next]);
   }
 
-  // generate time IDs in milliseconds, helper
+  print('\ngenerate time IDs in milliseconds, helper');
   {
     for (var i = 0; i < 4; ++i) {
       print(genTimeId);
     }
   }
 
-  // generate time IDs in microseconds, helper
+  print('\ngenerate time IDs in microseconds, helper');
   {
     for (var i = 0; i < 4; ++i) {
       print(genTimeIdMicro);

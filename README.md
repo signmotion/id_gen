@@ -15,7 +15,7 @@
 The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable, time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
-Share some ❤️ and star repo to support the project.
+Share some ❤️ and ⭐ repo to support the project.
 
 ## Platforms
 
@@ -30,16 +30,11 @@ Share some ❤️ and star repo to support the project.
 About UUID (online generator): <https://uuidgenerator.net>
 
 ```dart
-for (var i = 0; i < 4; ++i) {
-  print(genUuid);
-}
+print([for (var i = 0; i < 4; ++i) genUuid]);
 ```
 
 ```text
-490833da-4976-4563-8c8a-9f5464a2bf7e
-e82e3bf5-c3ea-46d6-a835-12644b99cf6e
-4d86c01f-777b-4599-b28f-c87c3737c8e2
-60fc6015-417e-4548-adaa-b032b1f7dbcd
+[4c48329b-2c1b-4534-b649-1a462626bcd4, a1afafe2-d57a-46ae-9f27-7e42dc936475, 283ae055-cf4e-4d6d-b505-e2a7d60806d2, 843832d1-d0f0-48e7-8a61-3aa151c2103b]
 ```
 
 ### Generate HID from language
@@ -63,21 +58,19 @@ tema-stati-chy-nazva-kursu
 ### Generate Transit Integer ID
 
 ```dart
-print(genTransitId);
-// or
-print(TransitId().next);
+print([for (var i = 0; i < 4; ++i) genTransitId]);
 ```
 
 ```text
-1
-2
+[1, 2, 3, 4]
 ```
 
 ### Generate Time Integer ID
 
 ```dart
+// milliseconds
 print(genTimeId);
-// or
+// microseconds
 print(genTimeIdMicro);
 ```
 
@@ -115,7 +108,7 @@ Contributions are what make the open-source community such a great place to lear
 
 If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
 
-- [Guide to making a first contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
+- [Guide to Making a First Contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
 - [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
 
@@ -142,6 +135,6 @@ Once you start using the **IdGen**, it will become easy to choose the functional
 - Example of HID generation in your own language.
 - More predefined languages. See <https://github.com/bengourley/slugg/blob/master/slugg.js>
 
-It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, these notes will help you choose the suitable feature and become a contributor to the open-source community.
+It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, the above notes will help you choose the suitable "feature" and become a contributor to the open-source community.
 
 Created [with ❤️](https://syrokomskyi.com)
