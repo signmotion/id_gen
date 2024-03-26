@@ -27,7 +27,7 @@ Share some ❤️ and ⭐ repo to support the project.
 
 ### Generate 4 UUIDs
 
-About UUID (online generator): <https://uuidgenerator.net>
+About UUID and online generator: <https://uuidgenerator.net>
 
 ```dart
 print([for (var i = 0; i < 4; ++i) genUuid]);
@@ -38,7 +38,7 @@ print([for (var i = 0; i < 4; ++i) genUuid]);
 283ae055-cf4e-4d6d-b505-e2a7d60806d2, 843832d1-d0f0-48e7-8a61-3aa151c2103b]
 ```
 
-### Generate HID from language
+### Generate HumanID from Language
 
 Supported languages:
 
