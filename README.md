@@ -123,6 +123,9 @@ The package **IdGen** is open-source, stable and well-tested. Development happen
 [GitHub](https://github.com/signmotion/id_gen). Feel free to report issues
 or create a pull-request there.
 
+General questions are best asked on
+[StackOverflow](https://stackoverflow.com/questions/tagged/id_gen).
+
 And here is a curated list of how you can help:
 
 - Report parts of the documentation that are unclear.
