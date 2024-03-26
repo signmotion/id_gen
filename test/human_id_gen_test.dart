@@ -12,12 +12,11 @@ void main() {
     ...HidGenOptions.defaultRemoves,
     'Q',
   ];
-  final gen = HidGen(
-    options: HidGenOptions(
-      replaces: replaces,
-      removes: removes,
-    ),
+  final options = HidGenOptions(
+    replaces: replaces,
+    removes: removes,
   );
+  final gen = HidGen(options: options);
 
   group('generate ID by string with latin chars', () {
     test('no spaces', () {
@@ -91,5 +90,14 @@ void main() {
   test('generate ID by string with unsafe URL chars', () {
     expect(gen.get('abc"`”“\'xyz'), 'abcxyz');
     expect(gen.get(r'abc~!#$%^&*()\,./<>@|-+xyz'), 'abc-xyz');
+  });
+
+  group('live examples', () {
+    test('1', () {
+      final options = HumanIdGenOptions(lowerCase: true);
+      final gen = HumanIdGen(options: options);
+      final hid = gen.get('Тема статті чи назва курсу');
+      expect(hid, 'tema-stati-chy-nazva-kursu');
+    });
   });
 }

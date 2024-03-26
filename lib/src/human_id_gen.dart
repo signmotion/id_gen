@@ -7,7 +7,8 @@ typedef HidGen = HumanIdGen;
 
 /// Human ID generator.
 class HumanIdGen extends IdGenBase<String> {
-  const HumanIdGen({this.options = const HumanIdGenOptions()});
+  HumanIdGen({HumanIdGenOptions? options})
+      : options = options ?? HumanIdGenOptions();
 
   final HumanIdGenOptions options;
 
@@ -60,20 +61,22 @@ typedef HidGenOptions = HumanIdGenOptions;
 
 /// Options for [HumanIdGen].
 class HumanIdGenOptions {
-  const HumanIdGenOptions({
+  HumanIdGenOptions({
     this.separator = defaultSeparator,
-    this.replaces = defaultConstReplaces,
-    this.removes = defaultConstRemoves,
+    Map<String, String>? replaces,
+    List<String>? removes,
     this.squeezeRepeated = true,
     this.trimSpacesInSource = true,
     this.trimSeparatorsInSource = true,
     this.lowerCase = false,
     this.upperCase = false,
-  }) : assert(
+  })  : assert(
             lowerCase && !upperCase ||
                 !lowerCase && upperCase ||
                 !lowerCase && !upperCase,
-            'Should be set one to `true` or both to `false`.');
+            'Should be set one to `true` or both to `false`.'),
+        replaces = replaces ?? defaultReplaces,
+        removes = removes ?? defaultRemoves;
 
   static const defaultSeparator = '-';
 
@@ -109,12 +112,12 @@ class HumanIdGenOptions {
   /// These strings will be replaces.
   /// Doing it before processed [removes].
   /// Case sensitivity.
-  final Map<String, String> replaces;
+  late final Map<String, String> replaces;
 
   /// These strings will be removed.
   /// Doing it after processed [replaces].
   /// Case sensitivity.
-  final List<String> removes;
+  late final List<String> removes;
 
   /// Will replace a sequence of [defaultReplaces] characters to single
   /// character.

@@ -19,7 +19,7 @@ void main() {
 
   print('\ngenerate HID from Ukrainian');
   {
-    const gen = HumanIdGen(options: HumanIdGenOptions(lowerCase: true));
+    final gen = HumanIdGen(options: HumanIdGenOptions(lowerCase: true));
     final hid = gen.get('Тема статті чи назва курсу');
     print(hid);
   }
