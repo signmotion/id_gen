@@ -17,13 +17,13 @@ Feel free to use it in your awesome project.
 
 Share some ❤️ and star repo to support the project.
 
-| Android | iOS | Linux | MacOS | Web | Windows |          |
-| :-----: | :-: | :---: | :---: | :-: | :-----: | :------- |
-|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    | Platform |
+| Android | iOS | Linux | MacOS | Web | Windows |              |
+| :-----: | :-: | :---: | :---: | :-: | :-----: | :----------- |
+|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    | **platform** |
 
-| Dart | Flutter |     |
-| :--: | :-----: | :-- |
-|  ✅  |   ✅    | SDK |
+| Dart | Flutter |         |
+| :--: | :-----: | :------ |
+|  ✅  |   ✅    | **SDK** |
 
 ## Usage
 
