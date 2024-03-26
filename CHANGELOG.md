@@ -3,6 +3,12 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.4
+
+- Fixed omission of some options during HID generation.
+- Enhanced tests.
+- Improved examples.
+
 ## 0.7.3
 
 - Added a help for first-time contributor in `README`.
