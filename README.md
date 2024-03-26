@@ -34,7 +34,8 @@ print([for (var i = 0; i < 4; ++i) genUuid]);
 ```
 
 ```text
-[4c48329b-2c1b-4534-b649-1a462626bcd4, a1afafe2-d57a-46ae-9f27-7e42dc936475, 283ae055-cf4e-4d6d-b505-e2a7d60806d2, 843832d1-d0f0-48e7-8a61-3aa151c2103b]
+[4c48329b-2c1b-4534-b649-1a462626bcd4, a1afafe2-d57a-46ae-9f27-7e42dc936475,
+283ae055-cf4e-4d6d-b505-e2a7d60806d2, 843832d1-d0f0-48e7-8a61-3aa151c2103b]
 ```
 
 ### Generate HID from language
