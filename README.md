@@ -107,13 +107,14 @@ aerwyna
 
 Requests and suggestions are warmly welcome.
 
-Contributions are what make the open-source community such a great place to learn, create, and be inspired.
+Contributions are what make the open-source community such a great place to learn, create, take a new skills, and be inspired.
 
 If this is your first contribution, I'll leave you with some of the best links I've found: they will help you get started or/and become even more efficient.
 
 - [Guide to Making a First Contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
 - [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
+- [CodeTriangle](https://codetriage.com) Free community tools for contributing to Open Source projects.
 
 The package **IdGen** is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/id_gen). Feel free to report issues
