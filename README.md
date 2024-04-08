@@ -2,6 +2,7 @@
 
 ![Cover - ID Generators](https://raw.githubusercontent.com/signmotion/id_gen/master/images/cover.webp)
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/d69b9852e814401ab9b0a98af2b29421)](https://app.codacy.com/gh/signmotion/id_gen?utm_source=github.com&utm_medium=referral&utm_content=signmotion/id_gen&utm_campaign=Badge_Grade)
 [![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 [![Pub Package](https://img.shields.io/pub/v/id_gen.svg?logo=dart&logoColor=00b9fc&color=blue)](https://pub.dartlang.org/packages/id_gen)
 [![Code Size](https://img.shields.io/github/languages/code-size/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen)
