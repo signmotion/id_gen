@@ -3,10 +3,10 @@ import 'package:test/expect.dart';
 import '../extensions/uuid_ext.dart';
 
 /// A matcher that matches the String is UUID with prefix.
-const Matcher isUuidWithPrefix = _IsUuidWithPrefix();
+const isUuidWithPrefix = _IsUuidWithPrefix();
 
-/// A matcher that matches the String is not UUID.
-const Matcher isNotUuidWithPrefix = _IsNotUuidWithPrefix();
+/// A matcher that matches the [String] is not UUID.
+const isNotUuidWithPrefix = _IsNotUuidWithPrefix();
 
 class _IsUuidWithPrefix extends Matcher {
   const _IsUuidWithPrefix();

@@ -3,10 +3,10 @@ import 'package:test/expect.dart';
 import '../extensions/uuid_ext.dart';
 
 /// A matcher that matches the String is UUID.
-const Matcher isUuid = _IsUuid();
+const isUuid = _IsUuid();
 
 /// A matcher that matches the String is not UUID.
-const Matcher isNotUuid = _IsNotUuid();
+const isNotUuid = _IsNotUuid();
 
 class _IsUuid extends Matcher {
   const _IsUuid();
