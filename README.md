@@ -107,6 +107,10 @@ print(Quant(hid: 'aerwyna').id);
 aerwyna
 ```
 
+## Whats New
+
+Look at [changelog](https://pub.dev/packages/id_gen/changelog).
+
 ## 🙋‍♀️🙋‍♂️Welcome
 
 Requests and suggestions are warmly welcome.
