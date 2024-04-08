@@ -19,13 +19,13 @@ Feel free to use it in your awesome project.
 | :-----: | :-: | :---: | :---: | :-: | :-----: | :----------- |
 |   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    | **platform** |
 
-| Dart | Flutter |         |
-| :--: | :-----: | :------ |
-|  ✅  |   ✅    | **SDK** |
+| Flutter | Dart |         |
+| :-----: | :--: | :------ |
+|   ✅    |  ✅  | **SDK** |
 
 Share some ❤️ and star repo to support the project.
 
-## Usage
+## 🚀Usage
 
 ### Generate 4 UUIDs
 
@@ -103,7 +103,7 @@ print(Quant(hid: 'aerwyna').id);
 aerwyna
 ```
 
-## Welcome to Inspiration
+## 🙋‍♀️🙋‍♂️Welcome
 
 Requests and suggestions are warmly welcome.
 
