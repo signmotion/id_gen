@@ -3,6 +3,14 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.5
+
+- Added a link to [CodeTriangle](https://codetriage.com) in `README`.
+- Provided CodeFactor badge in `README`.
+- Added emojis to **Usage** and **Welcome** sections in `README`.
+- Changed a representation of supported platforms and SDKs in `README`.
+- Removed unnecessary type declarations.
+
 ## 0.7.4
 
 - Fixed omission of some options during HID generation.
