@@ -15,13 +15,15 @@
 The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generate identifiers: globally unique, readable, time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
+[![CodeFactor](https://codefactor.io/repository/github/signmotion/id_gen/badge)](https://codefactor.io/repository/github/signmotion/id_gen)
+
 | Android | iOS | Linux | MacOS | Web | Windows |
 | :-----: | :-: | :---: | :---: | :-: | :-----: |
 |   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
 
-| Flutter | Dart | [![CodeFactor](https://codefactor.io/repository/github/signmotion/id_gen/badge)](https://codefactor.io/repository/github/signmotion/id_gen) |
-| :-----: | :--: | ------------------------------------------------------------------------------------------------------------------------------------------- |
-|   ✅    |  ✅  |                                                                                                                                             |
+| Flutter | Dart |
+| :-----: | :--: |
+|   ✅    |  ✅  |
 
 Share some ❤️ and star repo to support the project.
 
