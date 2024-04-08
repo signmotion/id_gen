@@ -7,6 +7,10 @@
 [![Code Size](https://img.shields.io/github/languages/code-size/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen)
 [![Publisher](https://img.shields.io/pub/publisher/id_gen)](https://pub.dev/publishers/syrokomskyi.com)
 
+![SDK version](https://badgen.net/pub/sdk-version/id_gen)
+![Supported platforms](https://badgen.net/pub/flutter-platform/id_gen)
+![Supported SDKs](https://badgen.net/pub/dart-platform/id_gen)
+
 [![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/id_gen/dart-ci.yml?logo=github-actions&logoColor=white)](https://github.com/signmotion/id_gen/actions)
 [![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/pulls)
 [![Issues](https://img.shields.io/github/issues/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/issues)
@@ -16,14 +20,6 @@ The standardized, easy-to-use and [well-tested](https://github.com/signmotion/id
 Feel free to use it in your awesome project.
 
 [![CodeFactor](https://codefactor.io/repository/github/signmotion/id_gen/badge)](https://codefactor.io/repository/github/signmotion/id_gen)
-
-| Android | iOS | Linux | MacOS | Web | Windows |
-| :-----: | :-: | :---: | :---: | :-: | :-----: |
-|   ✅    | ✅  |  ✅   |  ✅   | ✅  |   ✅    |
-
-| Flutter | Dart |
-| :-----: | :--: |
-|   ✅    |  ✅  |
 
 Share some ❤️ and star repo to support the project.
 
