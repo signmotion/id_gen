@@ -135,7 +135,7 @@ And here is a curated list of how you can help:
 - Sharing your examples. If you've experimented with our use cases or have crafted some examples of your own, feel free to add them to the `example` directory. Your practical insights can enrich our resource pool.
 - Fix typos/grammar mistakes.
 - Report bugs and scenarios that are difficult to implement.
-- Implement new features by making a pull-request (look below).
+- Implement new features by making a pull-request.
 
 ## 🕧TODO (perhaps)
 
