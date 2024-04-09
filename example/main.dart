@@ -5,9 +5,7 @@ import 'package:id_gen/id_gen_helpers.dart';
 
 void main() {
   print('\ngenerate random UUIDs, helper');
-  {
-    print([for (var i = 0; i < 4; ++i) genUuid]);
-  }
+  print([for (var i = 0; i < 4; ++i) genUuid]);
 
   print('\ngenerate random UUIDs, native');
   {
@@ -39,16 +37,12 @@ void main() {
   }
 
   print('\ngenerate time IDs in milliseconds, helper');
-  {
-    for (var i = 0; i < 4; ++i) {
-      print(genTimeId);
-    }
+  for (var i = 0; i < 4; ++i) {
+    print(genTimeId);
   }
 
   print('\ngenerate time IDs in microseconds, helper');
-  {
-    for (var i = 0; i < 4; ++i) {
-      print(genTimeIdMicro);
-    }
+  for (var i = 0; i < 4; ++i) {
+    print(genTimeIdMicro);
   }
 }
