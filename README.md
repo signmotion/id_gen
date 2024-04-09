@@ -25,6 +25,18 @@ Share some ❤️ and star repo to support the project.
 
 _If you write an article about **IdGen** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README** 🤝_
 
+---
+
+- [🚀Usage](#🚀usage)
+  - [Generate 4 UUIDs](#generate-4-uuids)
+  - [Generate HumanID from Language](#generate-humanid-from-Language)
+  - [Generate Transit Integer ID](#generate-transit-integer-id)
+  - [Generate Time Integer ID](#generate-time-integer-id)
+  - [Add HID and UID to Any Class](#add-hid-and-uid-to-any-class)
+- [Whats New](#whats-new)
+- [🙋‍♀️🙋‍♂️Welcome](#🙋‍♀️🙋‍♂️welcome)
+- [🕧TODO](#🕧todo-perhaps)
+
 ## 🚀Usage
 
 ### Generate 4 UUIDs
