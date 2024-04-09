@@ -143,7 +143,8 @@ Once you start using the **IdGen**, it will become easy to choose the functional
 
 - Feautures for this package into README.
 - Example of HID generation in your own language.
-- More predefined languages. See <https://github.com/bengourley/slugg/blob/master/slugg.js>
+- More predefined languages. [1](https://github.com/bengourley/slugg/blob/master/slugg.js)
+- HID. A desire case convention. [1](https://pub.dev/packages/recase)
 
 It's just a habit of mine: writing down ideas that come to mind while working on a project. I confess that I rarely return to these notes. But now, hopefully, even if you don't have an idea yet, the above notes will help you choose the suitable "feature" and become a contributor to the open-source community.
 
