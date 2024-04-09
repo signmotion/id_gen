@@ -33,7 +33,7 @@ _If you write an article about **IdGen** or any of [these](https://pub.dev/packa
   - [Generate Transit Integer ID](#generate-transit-integer-id)
   - [Generate Time Integer ID](#generate-time-integer-id)
   - [Add HID and UID to Any Class](#add-hid-and-uid-to-any-class)
-- [Whats New](#whats-new)
+- [👁️What's New](#👁️whats-new)
 - [🙋‍♀️🙋‍♂️Welcome](#🙋‍♀️🙋‍♂️welcome)
 - [🕧TODO](#🕧todo-perhaps)
 
@@ -115,7 +115,7 @@ print(Quant(hid: 'aerwyna').id);
 aerwyna
 ```
 
-## Whats New
+## 👁️What's New
 
 Look at [changelog](https://pub.dev/packages/id_gen/changelog).
 
