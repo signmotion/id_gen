@@ -109,7 +109,7 @@ Look at [changelog](https://pub.dev/packages/id_gen/changelog).
 
 ## 🙋‍♀️🙋‍♂️Welcome
 
-Requests and suggestions are warmly welcome.
+If you encounter any problems, feel free to [open an issue](https://github.com/signmotion/id_gen/issues). If you feel the package is missing a feature, please [raise a ticket](https://github.com/signmotion/id_gen/issues) on Github and I'll look into it. Requests and suggestions are warmly welcome. Danke!
 
 Contributions are what make the open-source community such a great place to learn, create, take a new skills, and be inspired.
 
