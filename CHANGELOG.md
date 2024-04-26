@@ -3,6 +3,16 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.6
+
+- Enhanced `README`: added an opening speech in Welcome section, What's New section, shorted sentences, etc.
+- Simplified examples.
+- Replaced badges with supported platforms to <https://badgen.net/pub>.
+- Added TODO: HID. A desire case convention.
+- Removed a table of content from `README`. Reason: The links to sections doesn't work on github.
+- Added note to `pubspec.yaml` about version: compatible with <https://semver.org>.
+- Upgraded dependencies.
+
 ## 0.7.5
 
 - Added a link to [CodeTriangle](https://codetriage.com) in `README`.
