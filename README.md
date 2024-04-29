@@ -1,31 +1,31 @@
 # ID Generators
 
+![SDK version](https://badgen.net/pub/sdk-version/id_gen?style=for-the-badge)
+![Supported platforms](https://badgen.net/pub/flutter-platform/id_gen?style=for-the-badge)
+![Supported SDKs](https://badgen.net/pub/dart-platform/id_gen?style=for-the-badge)
+
 ![Cover - ID Generators](https://raw.githubusercontent.com/signmotion/id_gen/master/images/cover.webp)
 
-[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg)](https://opensource.org/licenses/MIT)
-[![Pub Package](https://img.shields.io/pub/v/id_gen.svg?logo=dart&logoColor=00b9fc&color=blue)](https://pub.dartlang.org/packages/id_gen)
-[![Code Size](https://img.shields.io/github/languages/code-size/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen)
-[![Publisher](https://img.shields.io/pub/publisher/id_gen)](https://pub.dev/publishers/syrokomskyi.com)
+[![GitHub License](https://img.shields.io/badge/license-MIT-blue.svg?style=for-the-badge)](https://opensource.org/licenses/MIT)
+[![Pub Package](https://img.shields.io/pub/v/id_gen.svg?logo=dart&logoColor=00b9fc&color=blue&style=for-the-badge)](https://pub.dartlang.org/packages/id_gen)
+[![Code Size](https://img.shields.io/github/languages/code-size/signmotion/id_gen?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/id_gen)
+[![Publisher](https://img.shields.io/pub/publisher/id_gen?style=for-the-badge)](https://pub.dev/publishers/syrokomskyi.com)
 
-![SDK version](https://badgen.net/pub/sdk-version/id_gen)
-![Supported platforms](https://badgen.net/pub/flutter-platform/id_gen)
-![Supported SDKs](https://badgen.net/pub/dart-platform/id_gen)
-
-[![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/id_gen/dart-ci.yml?logo=github-actions&logoColor=white)](https://github.com/signmotion/id_gen/actions)
-[![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/pulls)
-[![Issues](https://img.shields.io/github/issues/signmotion/id_gen?logo=github&logoColor=white)](https://github.com/signmotion/id_gen/issues)
-[![Pub Score](https://img.shields.io/pub/points/id_gen?logo=dart&logoColor=00b9fc)](https://pub.dev/packages/id_gen/score)
+[![Build Status](https://img.shields.io/github/actions/workflow/status/signmotion/id_gen/dart-ci.yml?logo=github-actions&logoColor=white&style=for-the-badge)](https://github.com/signmotion/id_gen/actions)
+[![Pull Requests](https://img.shields.io/github/issues-pr/signmotion/id_gen?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/id_gen/pulls)
+[![Issues](https://img.shields.io/github/issues/signmotion/id_gen?logo=github&logoColor=white&style=for-the-badge)](https://github.com/signmotion/id_gen/issues)
+[![Pub Score](https://img.shields.io/pub/points/id_gen?logo=dart&logoColor=00b9fc&style=for-the-badge)](https://pub.dev/packages/id_gen/score)
 
 The standardized, easy-to-use, and [well-tested](https://github.com/signmotion/id_gen/tree/master/test) set for generating identifiers: globally unique, readable, time-dependency, transitive, incremental, decremental IDs.
 Feel free to use it in your awesome project.
 
-[![CodeFactor](https://codefactor.io/repository/github/signmotion/id_gen/badge)](https://codefactor.io/repository/github/signmotion/id_gen)
+[![CodeFactor](https://codefactor.io/repository/github/signmotion/id_gen/badge?style=for-the-badge)](https://codefactor.io/repository/github/signmotion/id_gen)
 
 Share some ❤️ and star repo to support the project.
 
 _If you write an article about **IdGen** or any of [these](https://pub.dev/packages?q=publisher%3Asyrokomskyi.com&sort=updated) packages, let me know and I'll post the URL of the article in the **README**_ 🤝
 
-## 🚀Usage
+## 🚀 Usage
 
 ### Generate 4 UUIDs
 
@@ -103,11 +103,11 @@ print(Quant(hid: 'aerwyna').id);
 aerwyna
 ```
 
-## 👁️What's New
+## ✨ What's New
 
 Look at [changelog](https://pub.dev/packages/id_gen/changelog).
 
-## 🙋‍♀️🙋‍♂️Welcome
+## 👋 Welcome
 
 If you encounter any problems, feel free to [open an issue](https://github.com/signmotion/id_gen/issues). If you feel the package is missing a feature, please [raise a ticket](https://github.com/signmotion/id_gen/issues) on Github and I'll look into it. Requests and suggestions are warmly welcome. Danke!
 
@@ -118,7 +118,7 @@ If this is your first contribution, I'll leave you with some of the best links I
 - [Guide to Making a First Contribution](https://github.com/firstcontributions/first-contributions). You will find the guide in your native language.
 - [How to Contribute to Open Source](https://opensource.guide/how-to-contribute). Longread for deep diving for first-timers and for veterans.
 - [Summer Guide from Google](https://youtu.be/qGTQ7dEZXZc).
-- [CodeTriangle](https://codetriage.com) Free community tools for contributing to Open Source projects.
+- [CodeTriangle](https://codetriage.com). Free community tools for contributing to Open Source projects.
 
 The package **IdGen** is open-source, stable and well-tested. Development happens on
 [GitHub](https://github.com/signmotion/id_gen). Feel free to report issues
@@ -137,7 +137,7 @@ And here is a curated list of how you can help:
 - Report bugs and scenarios that are difficult to implement.
 - Implement new features by making a pull-request.
 
-## 🕧TODO (perhaps)
+## ✅ TODO (perhaps)
 
 Once you start using the **IdGen**, it will become easy to choose the functionality to contribute. But if you already get everything you need from this package but have some free time, let me write here what I have planned:
 
