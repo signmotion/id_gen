@@ -3,6 +3,12 @@
 All notable changes to the project `IdGen` will be documented in this file.
 See [Conventional Commits](https://conventionalcommits.org) for commit guidelines.
 
+## 0.7.8
+
+- Provided a link to [webduet.de](https://webduet.de "The Modern Planet-Scale Site for Your Ambitions") into `README`.
+- Enhanced [Fresher's badge](https://github.com/signmotion/fresher).
+- Upgraded dependencies.
+
 ## 0.7.7
 
 - Changed the style for shields in `README`.
